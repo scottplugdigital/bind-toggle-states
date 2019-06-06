@@ -1,11 +1,22 @@
 {
-  "name": "bind-toggle-states",
+  "name": "@plugdetroit/bind-toggle-states",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:scottplugdigital/bind-toggle-states.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/scottplugdigital/bind-toggle-states.git"
+  },
   "author": "Scott <scott@plugdetroit.com>",
   "license": "MIT",
   "dependencies": {
     "loglevel": "^1.6.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/scottplugdigital/bind-toggle-states/issues"
+  },
+  "homepage": "https://github.com/scottplugdigital/bind-toggle-states#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": ""
 }
