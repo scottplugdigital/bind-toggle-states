@@ -20,7 +20,10 @@ import * as log from 'loglevel';
  *  </target-element>
  */
 export function bindStateToggles() {
-  window.addEventListener('load', () => {
+  if (window.bindStateToggles) {
+    return;
+  }
+  window.bindStateToggles = () => {
     document.addEventListener('click', (event) => {
       if (!event.target.dataset.hasOwnProperty('target')) {
         return;
@@ -60,5 +63,6 @@ export function bindStateToggles() {
     }, false);
 
     log.info('[PLUG/TOGGLE] State toggle listener attached to document');
-  });
+  };
+  window.addEventListener('load', window.bindStateToggles);
 }
